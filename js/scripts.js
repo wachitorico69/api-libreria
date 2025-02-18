@@ -58,5 +58,3 @@ bookForm.addEventListener('submit', function(event) { //se añade un evento al b
 
 //Render inicial, llama a la función anterior
 renderBooks();
-
-//te amo claire cotrill
