@@ -56,16 +56,21 @@ bookForm.addEventListener('submit', function(event) { //se añade un evento al b
     bookForm.reset();
 });
 
-//Render inicial, llama a la función anterior
-renderBooks();
-
 function editBook(index) {
-
+    const book = books[index];
+    document.getElementById('title').value = book.title;
+    document.getElementById('author').value = book.author;
+    document.getElementById('publisher').value = book.publisher;
+    document.getElementById('year').value = book.year;
+    editingIndex = index;
 }
 
 function deleteBook(index) {
-    books.splice(index,1);
+    books.splice(index,1); //tabla
     localStorage.setItem('books', JSON.stringify(books));
-    localStorage.removeItem(JSON.stringify(books[index]));
+    localStorage.removeItem(JSON.stringify(books[index])); //borra localstorage
     renderBooks();
 }
+
+//Render inicial, llama a la función anterior
+renderBooks();
