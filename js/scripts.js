@@ -75,4 +75,3 @@ function deleteBook(index) {
 //Render inicial, llama a la función anterior
 renderBooks();
 
-//probando github
