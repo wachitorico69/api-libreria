@@ -49,9 +49,9 @@ input {
 }
 
 button {
-    background-color: #668AA8;
-    border-color: #668AA8;
-    color: white;
+    background-color: #DBD393;
+    border-color: #DBD393;
+    color: black;
     border-radius: 5px;
     font-family: "Sofia Sans", serif;
     cursor: pointer;
@@ -60,7 +60,7 @@ button {
 }
 
 button:hover {
-    background-color: #30638d;
+    background-color: #d3c453;
 }
 
 table {
