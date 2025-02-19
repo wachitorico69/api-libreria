@@ -25,6 +25,7 @@ form {
     border-radius: 8px;
     width: 450px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5em;
 }
 
 input {
@@ -78,6 +79,6 @@ th {
 }
 
 h1, h2 {
-    margin-top: 15px;
+    margin-bottom: 0.5em;
     border-bottom: 5px solid #668AA8;
 }
