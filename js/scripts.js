@@ -58,3 +58,14 @@ bookForm.addEventListener('submit', function(event) { //se añade un evento al b
 
 //Render inicial, llama a la función anterior
 renderBooks();
+
+function editBook(index) {
+
+}
+
+function deleteBook(index) {
+    books.splice(index,1);
+    localStorage.setItem('books', JSON.stringify(books));
+    localStorage.removeItem(JSON.stringify(books[index]));
+    renderBooks();
+}
